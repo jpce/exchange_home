@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @foreign_exchange.description %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @foreign_exchange.name %>
+</p>
+
+<%= link_to 'Edit', edit_foreign_exchange_path(@foreign_exchange) %> |
+<%= link_to 'Back', foreign_exchanges_path %>

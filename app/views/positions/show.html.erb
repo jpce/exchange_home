@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @position.company_id %>
+</p>
+
+<p>
+  <strong>Foreign exchange:</strong>
+  <%= @position.foreign_exchange_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @position.date %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @position.amount %>
+</p>
+
+<%= link_to 'Edit', edit_position_path(@position) %> |
+<%= link_to 'Back', positions_path %>

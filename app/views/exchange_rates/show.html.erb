@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @exchange_rate.date %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @exchange_rate.value %>
+</p>
+
+<p>
+  <strong>Foreing exchange orig:</strong>
+  <%= @exchange_rate.foreing_exchange_orig_id %>
+</p>
+
+<p>
+  <strong>Foreing exchange dest:</strong>
+  <%= @exchange_rate.foreing_exchange_dest_id %>
+</p>
+
+<p>
+  <strong>Operation type:</strong>
+  <%= @exchange_rate.operation_type %>
+</p>
+
+<p>
+  <strong>Value date:</strong>
+  <%= @exchange_rate.value_date %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @exchange_rate.company_id %>
+</p>
+
+<%= link_to 'Edit', edit_exchange_rate_path(@exchange_rate) %> |
+<%= link_to 'Back', exchange_rates_path %>
