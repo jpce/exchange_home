@@ -1,7 +1,7 @@
 class Company < ActiveRecord::Base
 	has_many :clients
-	private
-	def my_private
-		"hola private"
-	end
+	has_many :exchange_rates
+	has_many :users
+	has_many :positions
+	has_many :transactions
 end
