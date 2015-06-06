@@ -2,7 +2,8 @@ class CreateCompanies < ActiveRecord::Migration
   def change
     create_table :companies do |t|
       t.string :name
-      t.stringaddress :rfc
+      t.string :address 
+      t.string :rfc
 
       t.timestamps null: false
     end
